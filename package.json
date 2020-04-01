@@ -1,0 +1,30 @@
+{
+  "name": "mockingbird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts --watch src",
+    "test": "jest --watch",
+    "coverage": "jest --coverage --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.5",
+    "@types/source-map-support": "^0.5.1",
+    "jest": "^25.2.3",
+    "nodemon": "^2.0.2",
+    "onchange": "^6.1.0",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.0",
+    "source-map-support": "^0.5.16",
+    "ts-jest": "^25.2.1",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  }
+}
